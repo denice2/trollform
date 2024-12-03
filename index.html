@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Thank You For Choosing DD Shipping</h1>
+    <p id="description">This is our satisfaction form please feel free to fill it out.</p>
+    <form  method="post" id="survey-form">
+        <label for="name" id="name-label">Enter Your Name: <input type="text" id="name" placeholder="John Brown" required></label>
+        <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" placeholder="johnbrown@gmail.com" required></label>
+        <label for="number" id="number-label">Enter Your Age: <input type="number" id="number" min="13" max="99" placeholder="25" required></label>
+        <label for="dropdown">Select Your Gender: <select id="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Table</option>
+            <option value="4">Reptile</option>
+        </select></label>
+        <fieldset>
+            <legend>How Satisfied Are You?</legend>
+            <label for="really"><input type="radio" name="satisfaction" id="really" checked>Really</label>
+            <label for="average"><input type="radio" name="satisfaction" id="average">Average</label>
+            <label for="notmuch"><input type="radio" name="satisfaction" id="notmuch">Not Much</label>
+        </fieldset>
+        <fieldset>
+            <legend>What Were You Satisfied About The Least?</legend>
+            <label for="speed"><input type="checkbox" id="speed" value="1">Speed</label>
+            <label for="quality"><input type="checkbox" id="quality" value="2">Quality</label>
+            <label for="safety"><input type="checkbox" id="safety" value="3">Product Safety</label>
+            <label for="service"><input type="checkbox" id="service" value="4">Customer Services</label>
+        </fieldset>
+        <label for="comment">Additional Comments</label>
+        <textarea id="comment" placeholder="Shipping process could be a little bit faster." rows="3" cols="30"></textarea>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
